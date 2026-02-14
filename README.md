@@ -20,27 +20,37 @@ A modern backend service built with [Supabase](https://supabase.com/) for the Re
 ## Installation
 
 1. Clone the repository:
+
 ```bash
-git clone <repository-url>
+git clone  https://github.com/lostmart/supabaseRegistry
 cd supabase-back
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Set up environment variables:
+
 ```bash
 cp supabase/.env.local.example supabase/.env.local
 ```
 
-4. Start the local Supabase stack:
+4. Configure local environment:
+   - Edit `supabase/.env.local` with your local development credentials
+   - Add Google OAuth credentials from your Google Cloud Console
+   - ⚠️ **IMPORTANT**: `.env.local` is in `.gitignore` and should NEVER be committed
+
+5. Start the local Supabase stack:
+
 ```bash
 npm run supabase:start
 ```
 
 This will start all services:
+
 - **API Server**: http://127.0.0.1:54321
 - **Database**: localhost:54322
 - **Studio**: http://127.0.0.1:54323
@@ -73,7 +83,9 @@ supabase-back/
 ## Configuration
 
 ### Database Configuration
+
 Edit `supabase/config.toml` to modify:
+
 - PostgreSQL version: Major version 17
 - API port: 54321 (REST/GraphQL endpoints)
 - Database port: 54322
@@ -81,7 +93,9 @@ Edit `supabase/config.toml` to modify:
 - File storage limit: 50MiB
 
 ### Authentication Settings
+
 Located in `supabase/config.toml`:
+
 - Email-based signup: Enabled
 - JWT expiry: 1 hour (3600 seconds)
 - Refresh token rotation: Enabled
@@ -89,6 +103,7 @@ Located in `supabase/config.toml`:
 - Redirect URLs: Configure for your frontend application
 
 ### Storage Configuration
+
 - S3-compatible storage enabled
 - Default file size limit: 50MiB
 - Can be customized per bucket in config
@@ -96,6 +111,7 @@ Located in `supabase/config.toml`:
 ## Local Development Workflow
 
 1. **Start services:**
+
    ```bash
    npm run supabase:start
    ```
@@ -109,6 +125,7 @@ Located in `supabase/config.toml`:
    - Track changes automatically
 
 4. **Migrate changes:**
+
    ```bash
    npm run supabase:push    # Push to database
    npm run supabase:pull    # Pull from database
@@ -122,23 +139,76 @@ Located in `supabase/config.toml`:
 ## Dependencies
 
 ### Production
+
 - `@supabase/supabase-js` - Supabase JavaScript client
 - `@google/gemini-cli` - Google Gemini CLI integration
 
 ### Development
+
 - `supabase` - Supabase CLI for local development
 
 ## Environment Variables
 
-Create `supabase/.env.local` with:
+Create `supabase/.env.local` from the example template:
+
+```bash
+cp supabase/.env.local.example supabase/.env.local
 ```
+
+Then add your credentials:
+
+```
+# Google OAuth
+SUPABASE_AUTH_EXTERNAL_GOOGLE_CLIENT_ID=your_client_id
+SUPABASE_AUTH_EXTERNAL_GOOGLE_SECRET=your_client_secret
+
+# API Keys
 OPENAI_API_KEY=your_openai_key_here
-# Add other environment variables as needed
 ```
+
+⚠️ **IMPORTANT**: This file is in `.gitignore` and should NEVER be committed to GitHub.
+
+## Security Best Practices
+
+### Credentials Management
+
+- ✅ Store all secrets in `.env.local` (local only)
+- ✅ Use environment variable references in `config.toml`
+- ✅ Never hardcode API keys or secrets
+- ✅ Keep `secrets.json` local - it's in `.gitignore`
+
+### Files Protected by .gitignore
+
+```
+✅ .env.local - Local environment variables
+✅ secrets.json - Google OAuth credentials
+✅ .env files - All environment files
+✅ Private keys - *.pem, *.key, *.crt files
+```
+
+### Before Pushing to GitHub
+
+```bash
+# Verify no secrets are staged
+git status
+
+# Double-check what will be committed
+git diff --cached
+
+# Ensure .env.local and secrets.json are NOT in the commit
+```
+
+### If You Accidentally Committed Secrets
+
+1. Remove the file from Git history: `git rm --cached filename`
+2. Rotate compromised credentials immediately
+3. Add file to `.gitignore`
+4. Force push: `git push --force-with-lease`
 
 ## Testing Emails
 
 During local development, emails sent by the auth system are captured by Inbucket:
+
 - Access email inbox: http://127.0.0.1:54324
 - View all emails sent in development
 - Test email-based authentication flows
@@ -148,10 +218,10 @@ During local development, emails sent by the auth system are captured by Inbucke
 Configure your frontend to connect to the local backend:
 
 ```javascript
-import { createClient } from '@supabase/supabase-js'
+import { createClient } from "@supabase/supabase-js"
 
-const supabaseUrl = 'http://127.0.0.1:54321'
-const supabaseAnonKey = 'your-anon-key' // Get from Studio
+const supabaseUrl = "http://127.0.0.1:54321"
+const supabaseAnonKey = "your-anon-key" // Get from Studio
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey)
 ```
@@ -159,6 +229,7 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey)
 ## Production Deployment
 
 For production deployment, use Supabase Cloud or your own Supabase instance:
+
 1. Set environment variables for production
 2. Run migrations against production database
 3. Configure auth providers and URLs
@@ -167,20 +238,24 @@ For production deployment, use Supabase Cloud or your own Supabase instance:
 ## Troubleshooting
 
 ### Services won't start
+
 ```bash
 npm run supabase:stop
 npm run supabase:start
 ```
 
 ### Database port conflicts
+
 Change the port in `supabase/config.toml` [db] section
 
 ### Reset to clean state
+
 ```bash
 npm run supabase:reset
 ```
 
 This will:
+
 - Drop all tables and schemas
 - Apply migrations from schema files
 - Run seeds from `seed.sql`

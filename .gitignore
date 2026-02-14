@@ -109,6 +109,8 @@ dist-types/
 
 .claude
 
+secrets.json
+
 # Local Supabase data (if using Docker volumes)
 postgres/
 vector/

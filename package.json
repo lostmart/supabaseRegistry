@@ -1,0 +1,27 @@
+{
+	"name": "supabase-back",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"directories": {
+		"doc": "docs"
+	},
+	"scripts": {
+		"supabase:start": "set -a && . ./supabase/.env.local && set +a && supabase start",
+		"supabase:stop": "supabase stop",
+		"supabase:status": "supabase status",
+		"supabase:push": "set -a && . ./supabase/.env.local && set +a && supabase db push",
+		"supabase:pull": "set -a && . ./supabase/.env.local && set +a && supabase db pull",
+		"supabase:reset": "set -a && . ./supabase/.env.local && set +a && supabase db reset"
+	},
+	"devDependencies": {
+		"supabase": "^2.76.8"
+	},
+	"dependencies": {
+		"@google/gemini-cli": "^0.28.2",
+		"@supabase/supabase-js": "^2.95.3"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}

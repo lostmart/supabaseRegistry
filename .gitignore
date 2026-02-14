@@ -1,0 +1,114 @@
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+.env.prod
+.env.staging
+*.pem
+*.key
+*.crt
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+bun.lockb
+.npm/
+.node-gyp/
+
+# Supabase Local Development
+supabase/.env.local
+supabase/.temp/
+supabase/seed.sql.bak
+supabase/migrations/
+!supabase/migrations/.keep
+
+# Database & Local Data
+*.db
+*.sqlite
+*.sqlite3
+postgres_data/
+.pgpass
+
+# Build & Distribution
+dist/
+build/
+out/
+.next/
+.nuxt/
+coverage/
+.nyc_output/
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.env.local.example
+.sublime-project
+.sublime-workspace
+*.code-workspace
+
+# OS Specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.lnk
+
+# Logs
+logs/
+*.log
+lerna-debug.log*
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
+
+# Private Keys & Credentials
+signing_keys.json
+private_keys/
+secrets/
+credentials.json
+.ssh/
+
+# macOS
+.AppleDouble
+.LSOverride
+*.swp
+
+# Windows
+*.lnk
+Desktop.ini
+
+# Linux
+.directory
+
+# Dependencies Lock Files (optional - uncomment if using lock files)
+# package-lock.json
+# yarn.lock
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Generated Files
+*.generated.ts
+*.generated.js
+dist-types/
+
+.claude
+
+# Local Supabase data (if using Docker volumes)
+postgres/
+vector/

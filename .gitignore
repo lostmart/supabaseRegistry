@@ -23,8 +23,7 @@ bun.lockb
 supabase/.env.local
 supabase/.temp/
 supabase/seed.sql.bak
-supabase/migrations/
-!supabase/migrations/.keep
+# migrations are tracked in git (no secrets, schema only)
 
 # Database & Local Data
 *.db

@@ -593,3 +593,38 @@ These rules apply to ALL tables containing user data:
 ```
 
 ```
+
+## 11. QCM 20 questions practice
+
+All 20 rows confirmed. Here's a summary of what was created:
+
+File: supabase/migrations/20260219000001_seed_qcm_fr.sql
+
+The migration inserts all 20 questions into the existing questions table with proper mapping:
+
+┌────────────────┬───────────────────────────────────────────────────────────────┐
+│ Field │ Mapping │
+├────────────────┼───────────────────────────────────────────────────────────────┤
+│ id │ q*csp*{theme}_{k|s}_{nnn} │
+├────────────────┼───────────────────────────────────────────────────────────────┤
+│ theme_id │ category → dd, inst, vie, hist, pv │
+├────────────────┼───────────────────────────────────────────────────────────────┤
+│ exam_type │ CSP (all users can access) │
+├────────────────┼───────────────────────────────────────────────────────────────┤
+│ question_type │ situational for "Mise en situation", knowledge for all others │
+├────────────────┼───────────────────────────────────────────────────────────────┤
+│ options │ JSONB array with labels A/B/C/D + text_fr │
+├────────────────┼───────────────────────────────────────────────────────────────┤
+│ correct_answer │ Label string ("A", "B", "C", "D") │
+├────────────────┼───────────────────────────────────────────────────────────────┤
+│ explanation_fr │ Cleaned explanation text │
+├────────────────┼───────────────────────────────────────────────────────────────┤
+│ difficulty │ 1 (easy), 2 (medium), 3 (situational/harder) │
+└────────────────┴───────────────────────────────────────────────────────────────┘
+
+Theme distribution:
+
+- dd (Droits et devoirs): 8 questions (5 knowledge + 3 situational)
+- inst (Système institutionnel): 4 questions
+- vie (Vie en société): 5 questions
+- hist (Histoire/géographie): 5 questions

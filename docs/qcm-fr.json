@@ -1,0 +1,242 @@
+{
+	"excercideData": {
+		"id": "qcm-fr-civique",
+		"questions": [
+			{
+				"question": "En France, est-il possible d'adhérer librement à un parti politique ?",
+				"options": [
+					"Non, les partis politiques sont réservés aux élus",
+					"Oui, mais seulement avec l'autorisation de l'État",
+					"Oui, c'est un droit fondamental",
+					"Non, sauf pour les partis au pouvoir"
+				],
+				"correctAnswerIndex": 2,
+				"category": "Droits et devoirs",
+				"examType": "Principes et valeurs de la République",
+				"explication": "La liberté d'association permet à tout citoyen d'adhérer au parti politique de son choix. [cite: 529, 532]"
+			},
+			{
+				"question": "Qui est responsable de la gestion des collèges publics en France ?",
+				"options": ["L'État", "La région", "Le département", "La commune"],
+				"correctAnswerIndex": 2,
+				"category": "Système institutionnel et politique",
+				"examType": "Système institutionnel et politique",
+				"explication": "Les départements ont la charge spécifique de la gestion des collèges. [cite: 543, 546]"
+			},
+			{
+				"question": "Qui gère les écoles primaires et maternelles publiques ?",
+				"options": ["L'État", "La région", "Le département", "La commune"],
+				"correctAnswerIndex": 3,
+				"category": "Système institutionnel et politique",
+				"examType": "Système institutionnel et politique",
+				"explication": "La gestion des écoles primaires et maternelles relève de la compétence de la commune. [cite: 551, 553]"
+			},
+			{
+				"question": "Comment les maires sont-ils désignés en France ?",
+				"options": [
+					"Élus au suffrage universel direct",
+					"Nommés par le Préfet",
+					"Élus par le conseil municipal",
+					"Choisis par le Président de la République"
+				],
+				"correctAnswerIndex": 2,
+				"category": "Système institutionnel et politique",
+				"examType": "Système institutionnel et politique",
+				"explication": "Les conseillers municipaux élisent le maire parmi eux après les élections municipales. [cite: 557, 560]"
+			},
+			{
+				"question": "Quelle collectivité territoriale organise les transports régionaux ?",
+				"options": ["La commune", "Le département", "La région", "L'État"],
+				"correctAnswerIndex": 2,
+				"category": "Système institutionnel et politique",
+				"examType": "Système institutionnel et politique",
+				"explication": "L'organisation des transports à l'échelle régionale est une mission de la région. [cite: 564, 569]"
+			},
+			{
+				"question": "À quel âge est fixée la majorité numérique permettant de s'inscrire seul sur les réseaux sociaux ?",
+				"options": ["13 ans", "15 ans", "18 ans", "16 ans"],
+				"correctAnswerIndex": 1,
+				"category": "Vivre dans la société française",
+				"examType": "Vivre dans la société française",
+				"explication": "Le RGPD fixe cet âge à 15 ans en France pour consentir seul au traitement de ses données. [cite: 572, 576]"
+			},
+			{
+				"question": "En France, la conduite d'une moto sans permis est considérée comme :",
+				"options": [
+					"Une simple infraction au code de la route",
+					"Un délit pénal",
+					"Une contravention",
+					"Autorisée si la puissance est faible"
+				],
+				"correctAnswerIndex": 1,
+				"category": "Droits et devoirs",
+				"examType": "Droits et devoirs",
+				"explication": "C'est un délit sanctionné par des peines d'amende et d'emprisonnement devant le tribunal correctionnel. [cite: 579, 583]"
+			},
+			{
+				"question": "En quoi consiste principalement le devoir de solidarité ?",
+				"options": [
+					"À payer ses dettes personnelles",
+					"À participer à l'effort collectif (impôts) et aux difficultés d'autrui",
+					"À respecter le code de la route",
+					"À servir dans l'armée uniquement"
+				],
+				"correctAnswerIndex": 1,
+				"category": "Droits et devoirs",
+				"examType": "Droits et devoirs",
+				"explication": "Il s'agit de contribuer aux charges de la nation selon ses moyens. [cite: 586, 591]"
+			},
+			{
+				"question": "Quel plat emblématique est une spécialité du sud-ouest de la France ?",
+				"options": ["La paella", "Le couscous", "Le cassoulet", "Les sushis"],
+				"correctAnswerIndex": 2,
+				"category": "Histoire, géographie et culture",
+				"examType": "Histoire, géographie et culture",
+				"explication": "Le cassoulet est un plat traditionnel français à base de haricots blancs et de viandes. [cite: 595, 598]"
+			},
+			{
+				"question": "Qui a peint le célèbre tableau 'La liberté guidant le peuple' ?",
+				"options": [
+					"Jacques-Louis David",
+					"Eugène Delacroix",
+					"Gustave Courbet",
+					"Théodore Géricault"
+				],
+				"correctAnswerIndex": 1,
+				"category": "Histoire, géographie et culture",
+				"examType": "Histoire, géographie et culture",
+				"explication": "Ce tableau a été peint en 1830 pour célébrer la révolution des Trois Glorieuses. [cite: 601, 605]"
+			},
+			{
+				"question": "Dans quel musée parisien peut-on admirer la Joconde ?",
+				"options": [
+					"Le Musée d'Orsay",
+					"Le Musée national d'art moderne",
+					"Le Musée du Louvre",
+					"Le Musée de l'Orangerie"
+				],
+				"correctAnswerIndex": 2,
+				"category": "Histoire, géographie et culture",
+				"examType": "Histoire, géographie et culture",
+				"explication": "L'œuvre de Léonard de Vinci est exposée au Musée du Louvre. [cite: 609, 612]"
+			},
+			{
+				"question": "Où se trouve la célèbre grotte abritant des peintures préhistoriques ?",
+				"options": [
+					"Val de Loire",
+					"Grotte de Lascaux",
+					"Carnac",
+					"Catacombes de Paris"
+				],
+				"correctAnswerIndex": 1,
+				"category": "Histoire, géographie et culture",
+				"examType": "Histoire, géographie et culture",
+				"explication": "La grotte de Lascaux en Dordogne contient des peintures datant du Paléolithique. [cite: 615, 621]"
+			},
+			{
+				"question": "Quel peintre est l'auteur de la série monumentale des 'Nymphéas' ?",
+				"options": [
+					"Paul Cézanne",
+					"Pierre-Auguste Renoir",
+					"Edgar Degas",
+					"Claude Monet"
+				],
+				"correctAnswerIndex": 3,
+				"category": "Histoire, géographie et culture",
+				"examType": "Histoire, géographie et culture",
+				"explication": "Claude Monet a peint ces œuvres dans son jardin à Giverny. [cite: 626, 628]"
+			},
+			{
+				"question": "Que célèbre-t-on en France le 1er mai ?",
+				"options": [
+					"La fête nationale",
+					"La victoire de 1945",
+					"La fête du Travail",
+					"L'arrivée du printemps"
+				],
+				"correctAnswerIndex": 2,
+				"category": "Vivre dans la société française",
+				"examType": "Vivre dans la société française",
+				"explication": "Le 1er mai est la journée internationale des travailleurs et un jour férié. [cite: 632, 635]"
+			},
+			{
+				"question": "Qu'est-ce que le SMIC ?",
+				"options": [
+					"Le salaire moyen en France",
+					"Le salaire maximum horaire",
+					"Le salaire minimum horaire légal",
+					"Le revenu de solidarité active"
+				],
+				"correctAnswerIndex": 2,
+				"category": "Vivre dans la société française",
+				"examType": "Vivre dans la société française",
+				"explication": "Le Salaire Minimum de Croissance est le montant horaire brut minimal légal. [cite: 639, 642]"
+			},
+			{
+				"question": "Qui peut demander un congé parental d'éducation en France ?",
+				"options": [
+					"La mère uniquement",
+					"Le père uniquement",
+					"Un des parents salarié, sans condition de sexe",
+					"Les grands-parents uniquement"
+				],
+				"correctAnswerIndex": 2,
+				"category": "Vivre dans la société française",
+				"examType": "Vivre dans la société française",
+				"explication": "Tout parent salarié peut y prétendre suite à une naissance ou une adoption. [cite: 653, 656]"
+			},
+			{
+				"question": "Une femme peut-elle créer et diriger une entreprise en France ?",
+				"options": [
+					"Non, sans l'autorisation de son mari",
+					"Oui, mais uniquement si elle est célibataire",
+					"Oui, dans les mêmes conditions qu'un homme",
+					"Oui, mais elle ne peut pas être dirigeante"
+				],
+				"correctAnswerIndex": 2,
+				"category": "Vivre dans la société française",
+				"examType": "Principes et valeurs de la République",
+				"explication": "Les femmes ont la pleine capacité juridique pour créer et diriger des entreprises. [cite: 670, 673]"
+			},
+			{
+				"question": "Le refus de payer ses impôts pour protester est-il légal ?",
+				"options": [
+					"Oui, c'est une forme d'expression politique",
+					"Oui, car l'impôt est volontaire",
+					"Non, car l'impôt est un devoir constitutionnel obligatoire",
+					"Non, sauf si la majorité décide de le faire"
+				],
+				"correctAnswerIndex": 2,
+				"category": "Droits et devoirs",
+				"examType": "Mise en situation",
+				"explication": "Le paiement de l'impôt est inconditionnel et le refus est un délit fiscal. [cite: 690, 693]"
+			},
+			{
+				"question": "Le devoir de participer à la JDC s'applique-t-il à un étranger naturalisé ?",
+				"options": [
+					"Non, cela ne concerne que les Français de naissance",
+					"Oui, car tout citoyen doit concourir à la défense nationale",
+					"Non, les naturalisés en sont exemptés",
+					"Oui, mais seulement s'il a plus de 25 ans"
+				],
+				"correctAnswerIndex": 1,
+				"category": "Droits et devoirs",
+				"examType": "Mise en situation",
+				"explication": "Tous les citoyens, par naissance ou naturalisation, partagent les mêmes devoirs de défense. [cite: 731, 735]"
+			},
+			{
+				"question": "Une personne gardée à vue a-t-elle droit à un avocat dès le début ?",
+				"options": [
+					"Oui, c'est un droit garanti dès le début de la mesure",
+					"Non, seulement si l'enquête est terminée",
+					"Oui, mais seulement si elle avoue",
+					"Non, l'avocat n'est là que devant le juge"
+				],
+				"correctAnswerIndex": 0,
+				"category": "Droits et devoirs",
+				"examType": "Mise en situation",
+				"explication": "L'assistance d'un avocat est un droit effectif dès le début de la garde à vue. [cite: 740, 744]"
+			}
+		]
+	}
+}

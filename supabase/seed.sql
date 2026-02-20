@@ -1,0 +1,2 @@
+-- Seed file placeholder.
+-- Seed data is loaded via migrations (20260219000001_seed_qcm_fr.sql).
